@@ -56,7 +56,7 @@
 		task_element.appendChild(task_actions_element);
 
 		list_element.appendChild(task_element);
-// Apos acionar o botão de deletar o valor do input é passado como vazio
+		// Apos acionar o botão de deletar o valor do input é passado como vazio
 		input.value = '';
 		
 		task_edit_element.addEventListener('click', (e) => {
