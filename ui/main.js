@@ -1,5 +1,7 @@
 	// Utilizando querySelector para pegar todo o formulário, os inputs e a lista de elementos com as tarefas
 
+	// recomendo destrinchar todo fluxo do código utilizando (console.log)	
+
 	window.addEventListener('load', () => {
 		const form = document.querySelector("#new-task-form");
 		const input = document.querySelector("#new-task-input");
@@ -21,8 +23,6 @@
 		// content é a classe que é passada ao conteudo do valor da tarefa
 		const task_content_element = document.createElement('div');
 		task_content_element.classList.add('content');
-
-		console.log(task_content_element) // possivel ver dentro desse log
 
 		// aqui o content vira um filho da Div Task
 		task_element.appendChild(task_content_element);
