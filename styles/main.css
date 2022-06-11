@@ -31,8 +31,8 @@ header {
 
 header h1{ 
 	font-size: 2.5rem;
-	font-weight: 300;
 	color: var(--grey);
+	font-weight: 300;
 	margin-bottom: 1rem;
 }
 
@@ -42,19 +42,19 @@ header h1{
 
 input, button {
 	appearance: none;
-	border: none;
 	outline: none;
+	border: none;
 	background: none;
 }
 
 #new-task-input {
 	flex: 1 1 0%;
 	background-color: var(--darker);
-	padding: 1rem;
-	border-radius: 1rem;
-	margin-right: 1rem;
 	color: var(--light);
+	margin-right: 1rem;
+	padding: 1rem;
 	font-size: 1.25rem;
+	border-radius: 1rem;
 }
 
 #new-task-input::placeholder {
@@ -64,20 +64,24 @@ input, button {
 #new-task-submit {
 	color: var(--pink);
 	font-size: 1.25rem;
-	font-weight: 700;
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	cursor: pointer;
+	font-weight: 700;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
 	transition: 0.4s;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
 }
 
 #new-task-submit:hover {
 	opacity: 0.8;
 }
 
-#new-task-submit:active {
-	opacity: 0.6;
+.task-list {
+	padding: 1rem;
 }
 
 main {
@@ -85,10 +89,6 @@ main {
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
-}
-
-.task-list {
-	padding: 1rem;
 }
 
 .task-list h2 {
