@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lista de Tarefas</title>
-	<link rel="stylesheet" href="../style/styles.css" />
-</head>
-<body>
-	<header>
-		<h1>Lista de tarefas</h1>
-		<form id="new-task-form">
-			<input 
-				type="text" 
-				name="new-task-input" 
-				id="new-task-input" 
-				placeholder="Quais são seus planos hoje?" />
-			<input 
-				type="submit"
-				id="new-task-submit" 
-				value="Adicionar nova tarefa" />
-		</form>
-	</header>
-	<main>
-		<section class="task-list">
-			<h2>Tarefas</h2>
-			<div id="tasks">
-			</div>
-		</section>
-	</main>
-</body>
-<script src="index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lista de tarefas</h1>
+      <form id="new-task-form">
+        <input
+          type="text"
+          name="new-task-input"
+          id="new-task-input"
+          placeholder="Quais são seus planos hoje?"
+        />
+        <input
+          type="submit"
+          id="new-task-submit"
+          name="sendTask"
+          value="Adicionar nova tarefa"
+        />
+      </form>
+    </header>
+    <main>
+      <section class="task-list">
+        <h2>Tarefas</h2>
+        <div id="tasks"></div>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
 </html>
